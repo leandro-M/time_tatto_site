@@ -1,0 +1,54 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 100vw;
+    height: 80px;
+
+    background: rgba(#000,0.3);
+    transition: 0.3s;
+    display: none;
+    &.scrolled {
+        background: rgba(#000,0.7);
+        transition: 0.3s;
+    }
+
+    > .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        > .wrap {
+            list-style: none;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+
+            > .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                > .link {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    margin: 0 30px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: rgba(#fff,0.7);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+};

@@ -1,0 +1,21 @@
+{
+  "name": "TimeTattoo",
+  "authors": ["LeandroMedeiros", "ChristianOliveira", "DouglasAlcantara"],
+  "description": "Site para gerenciamento de estabelecimentos de tattoagens",
+  "main": "",
+  "keywords" : ["Site", "WebSite", "Time", "Tattoo", "TimeTattoo"],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#2.0.1",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

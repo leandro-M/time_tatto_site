@@ -1,0 +1,27 @@
+.btn-default {
+    display: table;
+    min-width: 120px;
+    margin: 0 auto;
+
+    text-decoration: none;
+
+    padding: 7px;
+
+    text-transform: uppercase;
+
+    background-color: $secondary;
+    color: #fff;
+
+    font-size: 13px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+        text-decoration: none;
+        color: $secondary;
+        border-color: $secondary;
+
+        background-color: #fff;
+        transition: 0.3s;
+    }
+}
