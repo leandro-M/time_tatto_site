@@ -1,15 +1,22 @@
-const homeIndex = {
-    ready: function() {
-        $(document).scroll(function(e) {
-            var top = $(window).scrollTop();
+var homeIndex = {
 
-            if(top > 200) {
-                $('.header').addClass('scrolled');
-            }else {
-                $('.header').removeClass('scrolled');
-            }
+    changeContentMiddle: function() {
+        $('[data-class="list-middle"]').click(function(){
+            var target = $(this).attr('data-target');
+
+            console.log(target);
+
+            $('[data-class="list-middle"]').removeClass('active');
+            $(this).addClass('active');
+
+            $('.toToggle').fadeOut();
+            $('[data-class="item-'+target+'"]').fadeIn();
         });
+    },
+
+    ready: function() {
+        homeIndex.changeContentMiddle();
     }
 }
 
-document.addEventListener('DOMContentLoaded', homeIndex.ready, false);
+$(document).ready(homeIndex.ready);

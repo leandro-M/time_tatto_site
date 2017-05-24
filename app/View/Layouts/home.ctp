@@ -30,6 +30,6 @@
     <?php
         //js default
 		echo $this->Html->script('libs/libs');
-        echo $this->fetch('scripts');
+        echo $this->fetch('scriptBottom');
     ?>
 </html>
