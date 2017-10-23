@@ -13,6 +13,7 @@
 			echo $this->fetch('css');
 			echo $this->fetch('script');
 		?>
+		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
 		<header class="header">
